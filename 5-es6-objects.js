@@ -23,7 +23,7 @@ const product = {
 // console.log(rating)
 
 // straightaway destructure the product input argument
-const transction = (type, { label, stock }) => {
+const transction = (type, { label, stock = 0 } = {}) => {
   console.log(type, label, stock)
 }
 
